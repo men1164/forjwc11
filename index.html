@@ -10,36 +10,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="main__item" id="icon1">
-        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="homeAltIconTitle homeAltIconDesc">
+    <nav class="navbar">
+        <div class="main__item">
+        <svg id="icon1" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="homeAltIconTitle homeAltIconDesc">
             <title id="homeAltIconTitle">Home</title>
             <path d="M3 10.182V22h18V10.182L12 2z"></path>
             <rect width="6" height="8" x="9" y="14"></rect>
         </svg>
-    </div>
-    <div class="main__item" id="icon2">
-        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="bookOpenedIconTitle bookOpenedIconDesc">
+        <svg id="icon2" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="bookOpenedIconTitle bookOpenedIconDesc">
             <title id="bookOpenedIconTitle">Book</title>
             <path d="M12 6s-2-2-4-2-5 2-5 2v14s3-2 5-2 4 2 4 2c1.333-1.333 2.667-2 4-2 1.333 0 3 .667 5 2V6c-2-1.333-3.667-2-5-2-1.333 0-2.667.667-4 2z"></path>
             <path stroke-linecap="round" d="M12 6v14"></path>
         </svg>
-    </div>
-    <div class="main__item" id="icon3">
-        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="newIconTitle newIconDesc">
+        <svg id="icon3" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="newIconTitle newIconDesc">
             <title id="newIconTitle">New</title>
             <path d="M19,13 L19,20 C19,20.5522847 18.5522847,21 18,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 L13,3"></path>
             <path d="M21.2892136 2.03921356L21.9607864 2.71078644C22.741835 3.49183502 22.741835 4.75816498 21.9607864 5.53921356L12 15.5 8.5 15.5 8.5 12 18.4607864 2.03921356C19.241835 1.25816498 20.508165 1.25816498 21.2892136 2.03921356zM17.25 3.25L20.75 6.75"></path>
         </svg>
-    </div>
-    <div class="main__item" id="icon4">
-        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="calendarIconTitle calendarIconDesc">
+        <svg id="icon4" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="calendarIconTitle calendarIconDesc">
             <title id="calendarIconTitle">Calendar</title>
             <rect width="18" height="16" x="3" y="5"></rect>
             <path d="M21 10L3 10M8 7L8 3M16 7L16 3"></path>
         </svg>
     </div>
+
+    </nav>
+    
     <div class="container">
-        <div class="row" id="div1">
+        <div class="row" id="home">
             <div class="col-sm-3">
                 <img src="logo.png" style="width: 70%; height: 70%;">
             </div>
@@ -51,9 +49,12 @@
                         Go to our website
                     </button></a>
             </div>
-        </div><br><br>
-        <div class="row">
-            <h3>History</h3>
+        </div><br>
+        <div id="underline"></div><br>
+        <div class="row" id="his">
+            <h3>History</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad hic voluptatem aspernatur totam veritatis atque laboriosam 
+            eaque enim veniam quas aut et, quisquam dolore, tempore libero illum laudantium accusamus aperiam!</p>
             
         </div>
         
@@ -62,9 +63,13 @@
 </body>
 <script>
     $(document).ready(function() {
-        $('#div1')
+        $('#home')
         .css('visibility', 'visible')
         .animate({opacity: 1.0, left: '20px'}, 1250);
+
+        $('#his')
+        .css('visibility', 'visible')
+        .animate({opacity: 1.0, top: '10px'}, 1250);
     });
 </script>
 </html>
