@@ -13,7 +13,7 @@ body {
 }
 
 .container{
-    margin-top: 2em;
+    margin-top: 8em;
     font-family: mitr;
     color: white;
 }
@@ -57,7 +57,7 @@ a {
     text-decoration: none !important;
 }
 
-#home, #his{
+#home, #his, #rev{
     visibility: hidden;
     opacity: 0.0;
     position: relative;
@@ -90,5 +90,11 @@ a {
 p {
     text-align: justify;
     font-size: 18px;
+}
+
+.navbar{
+    background-color: #1a1d7a;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
