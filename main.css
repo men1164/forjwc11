@@ -69,25 +69,16 @@ a {
     margin: 0 auto;
 }
 
-/*.main__item {
-    background: var(--white);
-    border-radius: 4px;
-    padding: 20px;
-    display: inline-block;
-    margin: 10px;
-}*/
-
 .main__item svg {
     width: 70px;
     height: 70px;
-    stroke: #2329D6;
+    stroke: rgb(124, 124, 133);
     stroke-width: 1;
     stroke-linecap: round;
     stroke-linejoin: miter;
     fill: none;
     color: #2329D6;
     transition: all 0.3s ease;
-    display: block;
     padding: 20px;
 }
 
