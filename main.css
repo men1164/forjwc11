@@ -7,7 +7,7 @@ body {
     background-size: cover;
 }
 
-.container-fluid{
+.container{
     margin-top: 2em;
     font-family: mitr;
     color: white;
@@ -78,7 +78,6 @@ a {
 }*/
 
 .main__item svg {
-    margin-left: 5em;
     width: 70px;
     height: 70px;
     stroke: #2329D6;
