@@ -63,12 +63,6 @@ a {
     position: relative;
 }
 
-.main {
-    width: 1152px;
-    text-align: center;
-    margin: 0 auto;
-}
-
 .main__item svg {
     width: 70px;
     height: 70px;
@@ -77,10 +71,8 @@ a {
     stroke-linecap: round;
     stroke-linejoin: miter;
     fill: none;
-    color: #2329D6;
     transition: all 0.3s ease;
     padding: 20px;
-    position: relative;
 }
 
 .main__item svg:hover{
@@ -99,3 +91,4 @@ p {
     text-align: justify;
     font-size: 18px;
 }
+
