@@ -98,3 +98,22 @@ p {
     position: sticky;
 }
 
+div.timetable {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.timetable table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div.timetable th, div.timetable td {   
+    border-bottom-style: dotted;
+    border-width: 1px;
+    padding: 0px;
+    font-size: 12px;
+    color: #fff;
+}
+

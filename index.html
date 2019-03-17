@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>JWC 11</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta ne="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -57,10 +57,13 @@
         <div id="underline"></div>
         <div class="row" id="his">
             <h3>History</h3><br>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad hic voluptatem aspernatur totam veritatis atque laboriosam 
-            eaque enim veniam quas aut et, quisquam dolore, tempore libero illum laudantium accusamus aperiam! Lorem ipsum dolor sit 
-            amet consectetur adipisicing elit. Dolores eveniet dolorum repudiandae aspernatur, mollitia totam eius aliquid asperiores 
-            sed deserunt, necessitatibus rerum modi amet impedit veniam numquam quas sit eos?</p>
+            <p>สวัสดีครับบ ไหน ๆ ก็มีพื้นที่ตรงนี้เพิ่มเติมแล้ว อยากจะใช้แนะนำตัวเพิ่มเติมอีกหน่อยนะครับ5555
+                ชื่อฐานสิทธิ์ สุวรรณโพธิ์ศรี (เม่น) กำลังจะจบการศึกษาชั้น ม.6 จากโรงเรียนรุ่งอรุณ ย่านพระรามสองครับ
+                ผมก็เป็นเด็กธรรมดาคนนึงครับ ที่ชอบการ coding เป็นชีวิตจิตใจ เคยเขียนมาแล้วหลายภาษา ทั้ง C / C# / HTML / PHP / JS ครับ
+                บางภาษาก็ได้แค่พื้นฐาน เพราะส่วนใหญ่จะศึกษาเองครับ ผมมั่นใจว่าค่ายนี้จะสามารถช่วยให้ผมพัฒนา skills การเขียนโค้ด
+                ได้ดีขึ้น นอกจากนี้ สิ่งที่สำคัญมากสำหรับผม คือการได้แลกเปลี่ยนความคิดที่มีต่อด้านต่าง ๆ กับเพื่อนใหม่หลาย ๆ คน
+                ทำให้ผมได้สังคมใหม่ ๆ มุมมองใหม่ ๆ มากขึ้น ผมหวังว่าเราจะได้เจอกันในค่ายนะครับ ขอบคุณครับ :)
+            </p>
         </div>
         <div id="underline"></div>
         <div class="row" id="rev">
@@ -74,11 +77,60 @@
                     <label for="comment">Comment:</label>
                     <textarea class="form-control" rows="10" placeholder="Comment.."></textarea>
                 </div>
+                <button id="sub" type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
         <div id="underline"></div>
         <div class="row">
-            <h3>Time Tabel</h3>
+            <h3>Time Table</h3>
+            <div id="table" class="timetable">
+                <table>
+                    <tr>
+                        <th style="width: 55px; height: 30px"></th>
+                        <th style="width: 300px">Mon 11/03/2019</th>
+                        <th style="width: 300px">Tue 12/03/2019</th>
+                        <th style="width: 300px">Wed 13/03/2019</th>
+                        <th style="width: 300px">Thu 14/03/2019</th>
+                        <th style="width: 300px">Fri 15/03/2019</th>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">9:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">10:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">11:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">12:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">13:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">14:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">15:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">16:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="hour" style="height: 60px">17:00</td>
+                        <td colspan="5"></td>
+                    </tr>
+                </table>  
+            </div>
         </div>
     </div>
     
@@ -97,6 +149,10 @@
         .css('visibility', 'visible')
         .animate({opacity: 1.0, bottom: '10px'}, 1500);
 
+        $('#table')
+        .css('visibility', 'visible')
+        .animate({opacity: 1.0, bottom: '10px'}, 1500);
+
         $('body').scrollspy({target: ".navbar", offset: 50});
     });
 
@@ -105,11 +161,15 @@
     });
 
     $("#icon2").click(function() {
-        $('html, body').animate({ scrollTop: $("#s1").offset().top}, 750);
+        $('html, body').animate({ scrollTop: $("#s1").offset().top}, 1500);
     });
 
     $("#icon3").click(function() {
-        $('html, body').animate({ scrollTop: $("#rev").offset().top}, 2000);
+        $('html, body').animate({ scrollTop: $("#rev").offset().top}, 1500);
+    });
+
+    $("#icon4").click(function() {
+        $("html, body").animate({ scrollTop: document.body.scrollHeight }, 1500);
     });
 </script>
 </html>
